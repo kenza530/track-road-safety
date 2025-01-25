@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Accident Monitoring</title>
+    <!-- Link to Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 10;
+            font-family: 'Arial', sans-serif;
+            background: url('pexels-emre-ayata-1859331980-30351086.jpg') no-repeat bottom center fixed;
+            background-size: cover;
+            color: #fff;
+            display: flex;
+            flex-direction: column; /* Change layout to column for vertical spacing */
+            justify-content: space-between; /* Spread content vertically */
+            padding: 60px;
+            min-height: 100vh; /* Ensure it takes up full viewport height */
+        }
+        .logo-container {
+            display: flex;
+            justify-content: left; /* Align the logo to the left */
+            align-items: flex-start; /* Align the logo to the top */
+            margin: 0; /* Remove any extra space */
+            padding: 0; /* Ensure no padding around the container */
+        }
+
+        .logo-container img {
+            width: 160px; /* Adjust the logo size */
+            height: auto;
+            border-radius: 0; /* No rounded corners */
+        }
+        
+
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-bottom: 80px; /* Space below icons */
+        }
+
+        .social-icons a {
+            color: #fff;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #3ce1e7;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center; /* Center the sections */
+            width: 90%;
+            gap: 90px; /* Space between the two sections */
+        }
+
+/* Style pour les titres uniquement */
+.about-section h2, .contact-section h2 {
+    font-family: 'Dancing Script', cursive; /* Police élégante */
+    font-size: 2rem; /* Taille adaptée pour les titres */
+    font-style: none; /* Style italique pour plus d'élégance */
+    color: #e5fbfc; /* Couleur blanche */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Ombre pour plus de lisibilité */
+    text-align: center; /* Centrer le texte */
+    margin-bottom: 20px; /* Espacement sous les titres */
+}
+
+/* Style général des sections, sans affecter les titres */
+.about-section, .contact-section {
+    font-family: 'Arial', sans-serif; /* Conserve la police standard pour le reste */
+    flex: 1;
+    padding: 10px;
+    background: rgba(57, 172, 162, 0.514); /* Conserve le fond actuel */
+    border-radius: 20px;
+    margin: 0 20px;
+    color: #fff; /* Couleur blanche pour le texte général */
+}
+
+        .about-section {
+            text-align: left; /* Align text to the left for the About section */
+        }
+
+        .contact-section {
+            text-align: left; /* Align text to the left for the Contact section */
+        }
+
+        .back-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            text-decoration: none;
+            font-size: 1rem;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #3ce1e7;
+            color: #fff;
+            transition: background 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #2aa7a7;
+        }
+
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            width: 90%;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background-color: #fff;
+            color: #333;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #3ce1e7;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2aa7a7;
+        }
+
+        /* Footer styles */
+        .footer {
+            text-align: center;
+            margin-top: 100px;
+            font-size: 2 rem;
+            color: #fff;
+            position: relative;
+            bottom: 90;
+            width: 100%;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+        <!-- Logo -->
+        <div class="logo-container">
+            <img src="logo.PNG" alt="Logo">
+        </div>
+    
+    <!-- Social Media Links Section -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/kenza-siali-13764a338/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/soundous01" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://insatgram.com/soundous.hcn/?next=%2F" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <a class="back-button" href="home.html">Back Home</a>
+
+    <div class="content">
+        <!-- Section About -->
+        <div class="about-section">
+            <h2>About Us</h2>
+            <p>Our platform helps road maintenance authorities identify accident-prone areas and poorly maintained roads. Using data-driven insights, we simplify maintenance processes to support smarter decisions and create safer roads for all.</p>
+            <h2>Developed by</h2>
+            <p>Two passionate and ambitious final-year students dedicated to innovation and creating impactful solutions for road safety.</p>
+        </div>
+
+        <!-- Section Get in Touch -->
+        <div class="contact-section">
+            <h2>Get in Touch</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message (Reclamation or Suggestion)" rows="4" style="padding: 10px; width: 90%; margin: 10px 0; border-radius: 5px; border: none; background-color: #fff; color: #333;" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&#169; 2025 All Rights Reserved for Owners</p>
+        <p>SIALI kenza&nbsp;  HOCINE Soundous</p>
+    </div>
+</body>
+</html>
